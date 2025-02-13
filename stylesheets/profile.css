@@ -1,0 +1,139 @@
+body {
+    padding: 20px;
+    height: 100%;
+    font-family: 'inter';
+    color: #3d3d3d;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 40px;
+}
+
+.sitename {
+    margin: 0;
+    padding: 12px 0;
+    display: inline-block;
+    color: #3d3d3d;
+    font-size: 19px;
+    font-weight: 800;
+    font-family: sans-serif;
+    text-decoration: none;
+}
+
+.red-text {
+    color: #d20a2e;
+}
+
+nav {
+    padding: 4px;
+    display: flex;
+    justify-content: space-around;
+    min-width: 400px;
+    background: #e8e8e8;
+    border-radius: 10px;
+}
+
+nav a {
+    padding: 6px;
+    display: inline-block;
+}
+
+nav img:hover {
+    transform: scale(1.1);
+}
+
+.perspective-links {
+    padding: 0;
+    display: flex;
+    flex-wrap: nowrap;
+    height: fit-content;
+    width: fit-content;
+    background: #3d3d3d;
+    box-sizing: border-box;
+    border-radius: 7px;
+    line-height: 0; /* Prevents extra gap below inline elements */
+}
+
+.perspective-links img {
+    margin: 0;
+    padding: 10px; /* Remove unnecessary padding */
+    border-radius: 7px;
+}
+
+
+.perspective-links a {
+    margin: 0;
+    height: fit-content;
+}
+
+#sci-link {
+    background: #d20a2e;
+    border-radius: 7px;
+}
+
+main {
+    display: grid;
+    grid-template-rows: 1fr 4fr;
+    gap: 10px;
+    margin: 0 auto;
+    padding: 0;
+    width: 720px;
+    aspect-ratio: 1 / 1.414;
+    border-radius: 7px;
+}
+
+.personal_info {
+    display: grid;
+    grid-template-columns: 2.2fr 1fr;
+    grid-auto-rows: 100%;
+    gap: 10px;
+    border-radius: 7px;
+}
+
+.personal_info>div {
+    background: #e8e8e8;
+    border-radius: 7px;
+}
+
+.resume {
+    display: grid;
+    grid-template-columns: 1.8fr 1px 1.2fr;
+    grid-auto-rows: 100%;
+    gap: 10px;
+    width: 100%;
+}
+
+.separator {
+    min-width: 1px;
+    background: #e8e8e8;
+}
+
+.resume div div {
+    background: #e8e8e8;
+    border-radius: 7px;
+}
+
+.resume_left {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 2fr 3fr;
+    gap: 10px;
+}
+
+.summary {
+    grid-column: 1 / 3;
+}
+
+.projects {
+    grid-column: 1 / 3;
+}
+
+.resume_right {
+    display: grid;
+    grid-template-rows: 2fr 1.5fr 3fr;
+    grid-auto-rows: 100%;
+    gap: 10px;
+}
