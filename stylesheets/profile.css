@@ -1,3 +1,8 @@
+@font-face {
+    font-family: 'inter';
+    src: url("../fonts/Inter/Inter-VariableFont_opsz\,wght.ttf");
+}
+
 body {
     padding: 20px;
     height: 100%;
@@ -94,6 +99,7 @@ main {
 }
 
 .personal_info>div {
+    padding: 10px;
     background: #e8e8e8;
     border-radius: 7px;
 }
@@ -136,4 +142,17 @@ main {
     grid-template-rows: 2fr 1.5fr 3fr;
     grid-auto-rows: 100%;
     gap: 10px;
+}
+
+.username {
+    margin: 5px;
+    font-family: 'inter';
+    color: #3d3d3d
+}
+
+.career {
+    margin: 5px;
+    margin-right: 10px;
+    font-family: 'inter';
+    color: #d20a2e;
 }
