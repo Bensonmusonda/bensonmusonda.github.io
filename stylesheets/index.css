@@ -91,6 +91,8 @@ main {
     display: grid;
     gap: 7px;
     grid-template-columns: 3fr 2fr;
+    padding-top: 50px;
+    padding-bottom: 50px;
     margin-bottom: 40px;
     width: 100%;
 }
