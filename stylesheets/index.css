@@ -88,34 +88,41 @@ main {
 }
 
 .hero {
-    display: flex;
-    justify-content: space-between;
-}
-
-.hero>div {
+    display: grid;
+    gap: 7px;
+    grid-template-columns: 3fr 2fr;
     margin-bottom: 40px;
-    height: 500px;
-    width: 48%;
-    /* background: #e8e8e8; */
+    width: 100%;
+}
+
+.hero > div {
+    height: 100%;
     border-radius: 7px;
-
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    color: #3d3d3d;
-}
-
-.hero-left {
-}
-
-.hero-right {
-    padding: 50px;
-    align-items: center;
+    padding: 20px; /* Optional padding if you want space inside */
+    box-sizing: border-box;
 }
 
 .hero-left>p {
     font-size: 18px;
 }
+
+.hero-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centers content vertically */
+}
+
+.hero-right {
+    padding: 50px;
+}
+
+.social_icons {
+    display: flex;
+    width: 100%;
+    margin-top: 25px;
+    justify-content: space-between;
+}
+
 
 .highlights {
     margin-bottom: 40px;
