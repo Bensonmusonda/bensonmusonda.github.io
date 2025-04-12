@@ -156,3 +156,5 @@ main {
     font-family: 'inter';
     color: #d20a2e;
 }
+
+footer { display: none; }

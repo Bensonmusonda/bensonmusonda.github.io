@@ -140,7 +140,7 @@ main {
 footer {
     margin: 0 auto;
     padding: 20px;
-    display: grid;
+     display: none;
     grid-template-rows: 1fr 1fr;
     grid-template-columns: 1fr 1fr;
     gap: 20px;
