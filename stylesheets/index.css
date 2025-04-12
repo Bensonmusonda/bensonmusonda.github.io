@@ -123,6 +123,9 @@ main {
     justify-content: space-between;
 }
 
+.tagline {
+    font-style: italic;
+}
 
 .highlights {
     margin-bottom: 40px;
