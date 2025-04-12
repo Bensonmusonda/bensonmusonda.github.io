@@ -130,3 +130,5 @@ main {
     background: #e8e8e8;
     border-radius: 10px;
 }
+
+footer { display: none; }
