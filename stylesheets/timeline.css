@@ -1,7 +1,12 @@
+@font-face {
+    font-family: 'Inter';
+    src: url("../fonts/Inter/Inter-VariableFont_opsz\,wght.ttf");
+}
+
 body {
     padding: 20px;
     height: 100%;
-    font-family: 'inter';
+    font-family: 'Inter';
     color: #3d3d3d;
 }
 
@@ -54,15 +59,14 @@ nav img:hover {
     background: #3d3d3d;
     box-sizing: border-box;
     border-radius: 7px;
-    line-height: 0; /* Prevents extra gap below inline elements */
+    line-height: 0; 
 }
 
 .perspective-links img {
     margin: 0;
-    padding: 10px; /* Remove unnecessary padding */
+    padding: 10px; 
     border-radius: 7px;
 }
-
 
 .perspective-links a {
     margin: 0;

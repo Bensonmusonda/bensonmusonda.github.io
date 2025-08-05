@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="https://unpkg.com/easymde/dist/easymde.min.css">
+    <link rel="stylesheet" type="text/css" href="stylesheets/admin.css">
+</head>
+<body>
+    <div class="navbar">
+        <a href="#" class="sitename"><span class="red-text">Bennies</span>lab</a>
+        <nav>
+            <a href="index.html"><img src="src/home.png" alt="Home"></a>
+            <a href="projects.html"><img src="src/folder.png" alt="Projects"></a>
+            <a href="blogs.html"><img src="src/pen.png" alt="Blogs"></a>
+            <a href="profile.html"><img src="src/cv.png" alt="Profile"></a>
+        </nav>
+        <div class="perspective-links">
+            <a href="#" id="sci-link"><img src="src/binary.png" alt="Science Perspective" /></a>
+            <a href="#" id="art-link"><img src="src/art.png" alt="Art Perspective" /></a>
+        </div>
+    </div>
+    <div class="content-wrapper">
+        <side>
+            <div class="admin-tab active-tab" data-tab="creation-center">
+                <img src="src/creation-center.png" alt="Creation Center" class="admin-icon">
+                <span class="admin-tab-text">Creation Center</span>
+            </div>
+            <div class="admin-tab" data-tab="profile-editor">
+                <img src="src/profile-editor.png" alt="Profile Editor" class="admin-icon">
+                <span class="admin-tab-text">Profile Editor</span>
+            </div>
+            <div class="admin-tab" data-tab="media-library">
+                <img src="src/media-library.png" alt="Media Library" class="admin-icon">
+                <span class="admin-tab-text">Media Library</span>
+            </div>
+            <div class="admin-tab" data-tab="drafts">
+                <img src="src/Drafts.png" alt="Drafts" class="admin-icon">
+                <span class="admin-tab-text">Drafts</span>
+            </div>
+            <div class="admin-tab" data-tab="analytics">
+                <img src="src/analytics.png" alt="Analytics" class="admin-icon">
+                <span class="admin-tab-text">Analytics</span>
+            </div>
+            <div class="logout">
+                <button id="logout-button">logout</button>
+            </div>
+        </side>
+
+        <main class="admin-main">
+            <div id="creation-center-content">
+                <h1 class="tab-header">Creation Center</h1>
+                <div class="create">
+                    <div class="create-option" data-type="project">
+                        <img src="src/create.png" alt="Create Project" class="create-icon">
+                        <span class="create-text">Create Project</span>
+                    </div>
+                    <div class="create-option" data-type="blog">
+                        <img src="src/create.png" alt="Create Blog Post" class="create-icon">
+                        <span class="create-text">Create Blog Post</span>
+                    </div>
+                    <div class="create-option" data-type="skill">
+                        <img src="src/create.png" alt="Create Skill" class="create-icon">
+                        <span class="create-text">Create Skill</span>
+                    </div>
+                </div>
+            </div>
+            <div id="profile-editor-content" style="display: none;">
+                <h1 class="tab-header">Profile Editor</h1>
+                <div class="profile-editor-grid">
+                    <div class="add-option" data-type="education">
+                        <img src="src/add.png" alt="Add Education" class="add-icon">
+                        <span class="add-text">Add Education</span>
+                    </div>
+                    <div class="add-option" data-type="certificate">
+                        <img src="src/add.png" alt="Add Certificate" class="add-icon">
+                        <span class="add-text">Add Certificate</span>
+                    </div>
+                    <div class="add-option" data-type="experience">
+                        <img src="src/add.png" alt="Add Experience" class="add-icon">
+                        <span class="add-text">Add Experience</span>
+                    </div>
+                </div>
+            </div>
+            </main>
+    </div>
+    <script src="https://unpkg.com/easymde/dist/easymde.min.js"></script>
+    <script src="scripts/admin.js"></script>
+</body>
+</html>

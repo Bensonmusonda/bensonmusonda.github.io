@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blogs</title>
+    <title id="pageTitle">Blog Post</title>
     <link rel="stylesheet" type="text/css" href="stylesheets/blogs.css">
+    <link rel="stylesheet" type="text/css" href="stylesheets/blog-post-detail.css">
 </head>
 <body>
     <div class="navbar">
@@ -21,51 +22,22 @@
         </div>
     </div>
 
-    <main>
-        
-        <div class="stickies-section">
-
-            <h1 class="stickies-header">Stickies</h1>
-
-            <div class="stickies">
-
-                <div class="stickie"></div>
-                <div class="stickie"></div>
-                <div class="stickie"></div>
-
+    <main class="post-detail-main">
+        <div class="post-container">
+            <div class="post-detail-thumbnail-container">
+                <img id="postDetailThumbnail" src="" alt="Post Thumbnail" style="display:none;">
             </div>
 
-        </div>
-
-        <div class="filters">
-
-            <div class="tags">
-
-                <div class="tag"></div>
-                <div class="tag"></div>
-                <div class="tag"></div>
-                <div class="tag"></div>
-                <div class="tag"></div>
-
+            <h1 class="post-detail-title">Loading...</h1>
+            <div class="post-meta">
+                <span class="category">Category</span>
+                <span class="date-posted">Posted: Loading...</span>
+                <br>
+                <span class="last-updated">Last Updated: Loading...</span>
             </div>
-
-            <div class="filter-dropdowns">
-
-                <div class="hashtag-dropdown"></div>
-                <div class="category-dropdown"></div>
-
+            <div class="post-content-rendered">
+                <p>Loading post content...</p>
             </div>
-        </div>
-        
-        <div class="blog-posts">
-            <div class="blog-post"></div>
-            <div class="blog-post"></div>
-            <div class="blog-post"></div>
-            <div class="blog-post"></div>
-            <div class="blog-post"></div>
-            <div class="blog-post"></div>
-            <div class="blog-post"></div>
-
         </div>
     </main>
 
@@ -77,6 +49,6 @@
     </footer>
 
     <script src="scripts/marked.min.js"></script>
-    <script src="scripts/blog.js"></script>
+    <script src="scripts/blog-post-detail.js"></script>
 </body>
 </html>

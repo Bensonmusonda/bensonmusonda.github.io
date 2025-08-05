@@ -2,20 +2,21 @@
 <html>
     <head>
         <title>Bennieslab</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" type="text/css" href="stylesheets/index.css">
     </head>
     <body>
         <div class="navbar">
-            <a href="#" class="sitename"><span class="red-text">Bennies</span>lab</a>
+            <a href="index.html" class="sitename"><span class="red-text">Bennies</span>lab</a>
             <nav>
-                <a href="index.html"><img src="src/home.png"></a>
-                <a href="projects.html"><img src="src/folder.png"></a>
-                <a href="blogs.html"><img src="src/pen.png"></a>
-                <a href="profile.html"><img src="src/cv.png"></a>
+                <a href="index.html"><img src="src/home.png" alt="Home icon"></a>
+                <a href="projects.html"><img src="src/folder.png" alt="Projects icon"></a>
+                <a href="blogs.html"><img src="src/pen.png" alt="Blogs icon"></a>
+                <a href="profile.html"><img src="src/cv.png" alt="Profile icon"></a>
             </nav>
             <div class="perspective-links">
-                <a href="#" id="sci-link"><img src="src/binary.png" /></a>
-                <a href="#" id="art-link"><img src="src/art.png" /></a>
+                <a href="#" id="sci-link"><img src="src/binary.png" alt="Science Perspective" /></a>
+                <a href="#" id="art-link"><img src="src/art.png" alt="Art Perspective" /></a>
             </div>
         </div>
         <main>
@@ -26,9 +27,9 @@
                 </div>
                 <div class="hero-right">
                     <div class="social_icons">
-                        <img src="src/linkedin.png" href="#">
-                        <img src="src/github.png" href="#">
-                        <img src="src/x.png" href="#">
+                        <img src="src/linkedin.png" href="#" alt="LinkedIn icon">
+                        <img src="src/github.png" href="#" alt="GitHub icon">
+                        <img src="src/x.png" href="#" alt="X (formerly Twitter) icon">
                     </div>
                     <h2>Bennie-core&trade;</h2>
                     <p class="tagline">Zero and One. Not much, yet everything.</p>
@@ -36,13 +37,13 @@
             </div>
             <div class="highlights">
                 <div class="projects">
-                    <div><h2>Highlights</h2></div>
+                    <div><h2>Projects</h2></div>
                     <div class="cards">
                         <div class="project"></div>
                         <div class="project"></div>
                         <div class="project"></div>
                     </div>
-                    <div><h2 class="more-btn">more</h2></div>
+                    <div class="more"><a href="projects.html"><h2 class="more-btn">more</h2></a></div>
                 </div>
                 <div class="posts">
                     <div><h2>Posts</h2></div>
@@ -51,7 +52,7 @@
                         <div class="post"></div>
                         <div class="post"></div>
                     </div>
-                    <div><h2 class="more-btn">more</h2></div>
+                    <div class="more"><a href="blogs.html"><h2 class="more-btn">more</h2></a></div>
                 </div>
                 <div class="skills">
                     <div><h2>Skills</h2></div>
@@ -60,7 +61,7 @@
                         <div class="skill"></div>
                         <div class="skill"></div>
                     </div>
-                    <div><h2 class="more-btn">more</h2></div>
+                    <div class="more"><a href="skills.html"><h2 class="more-btn">more</h2></a></div>
                 </div>
             </div>
             <div class="timeline">
@@ -85,8 +86,37 @@
             </div>
             <div class="contact">
                 <div class="contact-details">
+                    <div class="contact-info" id="email-info">
+                        <img src="src/email.png" alt="Email icon">
+                        <span>Bensonmusonda12@gmail.com</span>
+                    </div>
+                    <div class="contact-info" id="phone-info">
+                        <img src="src/phone.png" alt="Phone icon">
+                        <span>+260779357272</span>
+                    </div>
+                    <div class="contact-info" id="physical-location">
+                        <img src="src/location.png" alt="Location icon">
+                        <span>Kabwe, zambia</span>
+                    </div>
                 </div>
-                <div class="socials"></div>
+                <div class="socials">
+                    <div class="social" id="youtube-social">
+                        <img src="src/youtube.png" alt="YouTube icon">
+                        <span>Bennieslab</span>
+                    </div>
+                    <div class="social" id="github-social">
+                        <img src="src/github_red.png" alt="GitHub icon">
+                        <span>Bensonmusonda</span>
+                    </div>
+                    <div class="social" id="linkedin-social">
+                        <img src="src/linkedin_red.png" alt="LinkedIn icon">
+                        <span>/Bennieslab</span>
+                    </div>
+                    <div class="social" id="x-social">
+                        <img src="src/x_red.png" alt="X (formerly Twitter) icon">
+                        <span>/Bennieslab</span>
+                    </div>
+                </div>
             </div>
         </main>
         <footer>
@@ -95,5 +125,6 @@
             <div></div>
             <div></div>
         </footer>
+        <script src="scripts/index.js"></script>
     </body>
 </html>

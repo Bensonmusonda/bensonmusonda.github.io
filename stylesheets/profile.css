@@ -1,12 +1,12 @@
 @font-face {
-    font-family: 'inter';
+    font-family: 'Inter';
     src: url("../fonts/Inter/Inter-VariableFont_opsz\,wght.ttf");
 }
 
 body {
     padding: 20px;
     height: 100%;
-    font-family: 'inter';
+    font-family: 'Inter';
     color: #3d3d3d;
 }
 
@@ -59,15 +59,14 @@ nav img:hover {
     background: #3d3d3d;
     box-sizing: border-box;
     border-radius: 7px;
-    line-height: 0; /* Prevents extra gap below inline elements */
+    line-height: 0; 
 }
 
 .perspective-links img {
     margin: 0;
-    padding: 10px; /* Remove unnecessary padding */
+    padding: 10px; 
     border-radius: 7px;
 }
-
 
 .perspective-links a {
     margin: 0;
@@ -91,70 +90,148 @@ main {
 }
 
 .personal_info {
+    margin: 0;
+    margin-top: 40px;
     display: grid;
     grid-template-columns: 2.2fr 1fr;
     grid-auto-rows: 100%;
     gap: 10px;
-    border-radius: 7px;
 }
 
 .personal_info>div {
-    padding: 10px;
-    background: #e8e8e8;
-    border-radius: 7px;
+    margin: 0;
+    padding: 0px;
+}
+
+.identity h1, .identity h2 {
+    margin: 0;
+}
+
+.contact_info p {
+    font-family: 'Inter';
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.3em;
+    color: #3d3d3d;
 }
 
 .resume {
     display: grid;
-    grid-template-columns: 1.8fr 1px 1.2fr;
+    grid-template-columns: 2fr 1fr;
     grid-auto-rows: 100%;
     gap: 10px;
     width: 100%;
 }
 
-.separator {
-    min-width: 1px;
-    background: #e8e8e8;
-}
-
-.resume div div {
-    background: #e8e8e8;
-    border-radius: 7px;
+.resume > div h2 {
+    margin: 0;
+    color: #d20a2e;
+    font-size: 17px;
 }
 
 .resume_left {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 2fr 3fr;
     gap: 10px;
 }
 
-.summary {
-    grid-column: 1 / 3;
-}
-
-.projects {
-    grid-column: 1 / 3;
+.summary p {
+    font-family: 'Inter';
+    line-height: 1.3em;
+    color: #3d3d3d;
 }
 
 .resume_right {
     display: grid;
-    grid-template-rows: 2fr 1.5fr 3fr;
-    grid-auto-rows: 100%;
     gap: 10px;
 }
 
 .username {
     margin: 5px;
-    font-family: 'inter';
+    font-family: 'Inter';
     color: #3d3d3d
 }
 
 .career {
     margin: 5px;
     margin-right: 10px;
-    font-family: 'inter';
+    font-family: 'Inter';
     color: #d20a2e;
 }
 
 footer { display: none; }
+
+@media (max-width: 900px) {
+
+    main {
+        width: 100%;
+        padding: 0 10px;
+        aspect-ratio: unset; 
+    }
+
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav {
+        min-width: unset;
+        width: 100%;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .perspective-links {
+        margin-top: 10px;
+    }
+
+    .personal_info {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .resume {
+        display: flex;
+        flex-direction: column;
+        gap: 20px; 
+    }
+}
+
+@media (max-width: 600px) {
+
+    body {
+        padding: 10px;
+    }
+
+    .navbar {
+        flex-direction: row;
+        flex-wrap: wrap; 
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .sitename {
+        flex-grow: 1;
+        order: 1;
+    }
+
+    .perspective-links {
+        order: 2;
+        margin-top: 0;
+    }
+
+    nav {
+        order: 3;
+        width: 100%;
+        margin-top: 10px; 
+    }
+
+    .personal_info {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .resume {
+        display: flex;
+        flex-direction: column;
+    }
+}

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="pageTitle">Project Details</title>
+    <link rel="stylesheet" type="text/css" href="stylesheets/projects.css">
+    <link rel="stylesheet" type="text/css" href="stylesheets/project-detail.css">
+</head>
+<body>
+    <div class="navbar">
+        <a href="#" class="sitename"><span class="red-text">Bennies</span>lab</a>
+        <nav>
+            <a href="index.html"><img src="src/home.png" alt="Home"></a>
+            <a href="projects.html"><img src="src/folder.png" alt="Projects"></a>
+            <a href="blogs.html"><img src="src/pen.png" alt="Blogs"></a>
+            <a href="profile.html"><img src="src/cv.png" alt="Profile"></a>
+        </nav>
+        <div class="perspective-links">
+            <a href="#" id="sci-link"><img src="src/binary.png" alt="Science Perspective" /></a>
+            <a href="#" id="art-link"><img src="src/art.png" alt="Art Perspective" /></a>
+        </div>
+    </div>
+
+    <main class="project-detail-main">
+        <div class="project-container">
+            <div class="project-detail-thumbnail-container">
+                <img id="projectDetailThumbnail" src="" alt="Project Thumbnail" style="display:none;">
+            </div>
+
+            <h1 class="project-detail-title">Loading...</h1>
+            <div class="project-meta">
+                <span class="category">Category</span>
+                <span class="date-posted">Posted: Loading...</span>
+                <br>
+                <span class="last-updated">Last Updated: Loading...</span>
+            </div>
+            <div class="project-content-rendered">
+                <p>Loading project content...</p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </footer>
+
+    <script src="scripts/marked.min.js"></script>
+    <script src="scripts/project-detail.js"></script>
+</body>
+</html>
